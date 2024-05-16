@@ -1,0 +1,13 @@
+.btn {
+  margin: 20px;
+}
+
+.user-card {
+  max-width: 800px;
+}
+
+.container {
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+}

@@ -1,0 +1,20 @@
+<div class="btn">
+  <button mat-icon-button routerLink="..">
+    <mat-icon fontIcon="arrow_back">more_vert</mat-icon>
+  </button>
+</div>
+<div class="container">
+  <mat-card class="user-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>User Details</mat-card-title>
+        <mat-card-subtitle
+          >First Name: {{ user.first_name }} <br />
+          Last Name: {{ user.last_name }} <br />
+          Email: {{ user.email }}</mat-card-subtitle
+        >
+        <img mat-card-xl-image [src]="user.avatar" />
+      </mat-card-title-group>
+    </mat-card-header>
+  </mat-card>
+</div>

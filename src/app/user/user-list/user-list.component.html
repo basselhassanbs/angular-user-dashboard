@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <mat-card
+    class="user-card"
+    *ngFor="let user of users"
+    [routerLink]="['/users', user.id]"
+  >
+    <img
+      height="180px"
+      width="180px"
+      mat-card-image
+      src="{{ user.avatar }}"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content>
+      <mat-card-title
+        >{{ user.first_name }} {{ user.last_name }}</mat-card-title
+      >
+    </mat-card-content>
+  </mat-card>
+</div>
+<mat-paginator
+  class="pagination"
+  [length]="total"
+  [pageSize]="per_page"
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  (page)="onPageChange($event)"
+>
+</mat-paginator>

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-inline: 200px;
+  margin-top: 26px;
+}
+
+.user-card {
+  max-width: 180px;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.pagination {
+  margin-top: 40px;
+}
